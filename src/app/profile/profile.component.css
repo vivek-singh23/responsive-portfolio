@@ -1,0 +1,75 @@
+@import "../../styles.css";
+
+a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  background-image: url(/assets/images/backgroundDP.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 0vh;
+  animation: scale 15s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.profile-text {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.first-word {
+  color: var(--blue-text);
+}
+
+.resume-check {
+  border: 2px solid var(--blue-text);
+  width: 175px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.resume-text {
+  color: white;
+}
+
+.resume-check:hover{
+  background-color: rgba(100, 100, 100, 0.4);
+}

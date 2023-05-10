@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --blue-text : #86ddff;
+  --dark-blue : #002b8f;
+  --mid-blue : #3ba0ff;
+  --header-color : #708888;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Courier New", Courier, monospace;
+}

@@ -1,0 +1,72 @@
+@import '../../styles.css';
+
+.container-fluid {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    position: relative;
+    background-image: url(/assets/images/BD.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+  }
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+
+.project-header{
+    display: flex;
+    flex-direction: row;
+    /* background-color: aquamarine; */
+    width: 100%;
+    font-size: 5rem;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+    top: 30%;
+    z-index: 2;
+    color: var(--header-color);
+    
+}
+.project-details{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    position: relative;
+    top: 40%;
+}
+.card-body{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.card{
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 10px 5px 10px var(--header-color);
+    transition: transform .2s;
+    z-index: 2;
+    
+}
+
+.card:hover{
+    background-color: var(--header-color);
+    transform: scale(1.2);
+
+}
+.card-title{
+    color: var(--dark-color);
+}
